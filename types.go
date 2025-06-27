@@ -1,5 +1,7 @@
 package windows
 
+import "unsafe"
+
 type (
 	HWND      uintptr
 	UINT      uint32
@@ -14,4 +16,11 @@ type (
 	ULONG_PTR uintptr
 	SHORT     int16
 	BYTE      byte
+	HANDLE    uintptr
+	SIZE_T    ULONG_PTR
+	LPVOID    unsafe.Pointer
+	LPCVOID   unsafe.Pointer
+	NTSTATUS  uint32
+	HMODULE   uintptr
+	CHAR      byte
 )
