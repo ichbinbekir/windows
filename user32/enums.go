@@ -28,6 +28,11 @@ const (
 	VK_XBUTTON2 = 0x06
 )
 
+const (
+	XBUTTON1 = 0x0001
+	XBUTTON2 = 0x0002
+)
+
 const HC_ACTION = 0
 
 const (
