@@ -125,3 +125,8 @@ func Module32Next(hSnapshot windows.HANDLE, lpme *MODULEENTRY32) windows.BOOL {
 	)
 	return windows.BOOL(ret)
 }
+
+func GetCurrentThreadId() windows.DWORD {
+	ret, _, _ := _getCurrentThreadId.Call()
+	return windows.DWORD(ret)
+}

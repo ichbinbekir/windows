@@ -18,4 +18,5 @@ var (
 	_process32Next            = _kernel32.NewProc("Process32NextW")
 	_module32First            = _kernel32.NewProc("Module32FirstW")
 	_module32Next             = _kernel32.NewProc("Module32NextW")
+	_getCurrentThreadId       = _kernel32.NewProc("GetCurrentThreadId")
 )
