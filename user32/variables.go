@@ -15,4 +15,5 @@ var (
 	_callNextHookEx      = _user32.NewProc("CallNextHookEx")
 	_getAsyncKeyState    = _user32.NewProc("GetAsyncKeyState")
 	_keybd_event         = _user32.NewProc("keybd_event")
+	_postThreadMessageW  = _user32.NewProc("PostThreadMessageW")
 )

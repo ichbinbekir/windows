@@ -73,3 +73,13 @@ func Keybd_event(bVk, bScan windows.BYTE, dwFlags windows.DWORD, dwExtraInfo win
 		uintptr(dwExtraInfo),
 	)
 }
+
+func PostThreadMessageW(idThread windows.DWORD, Msg windows.UINT, wParam windows.WPARAM, lParam windows.LPARAM) windows.BOOL {
+	ret, _, _ := _postThreadMessageW.Call(
+		uintptr(idThread),
+		uintptr(Msg),
+		uintptr(wParam),
+		uintptr(lParam),
+	)
+	return windows.BOOL(ret)
+}
